@@ -1,0 +1,11 @@
+Special Keys for SSPOS -- 
+F1 - SAVE
+F2 - Search
+F3 - Refresh
+F4 - UPDATE
+F5 - DELETE
+F6 - POPULATE/print
+
+
+
+

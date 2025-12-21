@@ -1,0 +1,8 @@
+SSPOS-WinForms
+======================
+1)Windows Form(asp.net)
+2).Net FrameWork(4.7.2)
+
+​
+ 
+
