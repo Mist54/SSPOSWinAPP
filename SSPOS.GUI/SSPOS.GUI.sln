@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.1.11312.151 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSPOS.GUI", "SSPOS.GUI.csproj", "{2327A9E1-DCA2-4D38-91D7-13C329078B6D}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSPOSTest", "..\SSPOSTest\SSPOSTest.csproj", "{2D82B05D-F67B-4764-B499-D8533392B5F9}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SSPOSSetupWizard", "..\SSPOSSetupWizard\SSPOSSetupWizard.vdproj", "{D3FBADF7-2F13-F171-7BA7-6655DAE62FC5}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SSPOS.DB", "..\SSPOSDB\SSPOS.DB.sqlproj", "{63CCDB9F-E59D-461D-9534-3F7E989AA0B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,12 @@ Global
 		{2D82B05D-F67B-4764-B499-D8533392B5F9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D3FBADF7-2F13-F171-7BA7-6655DAE62FC5}.Debug|Any CPU.ActiveCfg = Debug
 		{D3FBADF7-2F13-F171-7BA7-6655DAE62FC5}.Release|Any CPU.ActiveCfg = Release
+		{63CCDB9F-E59D-461D-9534-3F7E989AA0B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63CCDB9F-E59D-461D-9534-3F7E989AA0B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63CCDB9F-E59D-461D-9534-3F7E989AA0B8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{63CCDB9F-E59D-461D-9534-3F7E989AA0B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63CCDB9F-E59D-461D-9534-3F7E989AA0B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63CCDB9F-E59D-461D-9534-3F7E989AA0B8}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

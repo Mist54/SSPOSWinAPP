@@ -1,0 +1,81 @@
+# SSPOS - Simple Point of Sale Documentation
+
+## 1. Project Overview
+
+SSPOS (Simple Point of Sale) is a desktop application for managing sales, products, and inventory. It is built using C# and Windows Forms with the .NET Framework 4.7.2. The application is designed to be a simple and efficient solution for small businesses.
+
+## 2. System Architecture
+
+The project follows a 3-tier architecture to ensure separation of concerns and maintainability.
+
+*   **SSPOS.GUI (Presentation Layer):** This layer is responsible for the user interface and user interaction. It is built with Windows Forms and uses the MaterialSkin.2 library for a modern look and feel.
+*   **SSPOS.BLL (Business Logic Layer):** This layer contains the core business logic of the application. It acts as an intermediary between the presentation layer and the data access layer.
+*   **SSPOS.DLL (Data Logic Layer):** This layer handles all the database operations. It uses ADO.NET and communicates with a SQL Server database through stored procedures.
+
+## 3. Features
+
+*   User authentication (Login/Logout)
+*   Product management (Add, Update, Delete, View products)
+*   Category management
+*   Order management
+*   Billing and receipt printing
+*   Reporting
+*   User management
+
+## 4. Prerequisites
+
+To run or develop this project, you need the following installed on your system:
+
+*   Windows Operating System
+*   .NET Framework 4.7.2
+*   Visual Studio (2017 or later recommended)
+*   SQL Server (Express edition is sufficient)
+
+## 5. Installation and Setup
+
+1.  **Database Setup:**
+    *   Open SQL Server Management Studio (SSMS).
+    *   Create a new database named `SSPOS`.
+    *   Restore the database from the `Database/SSPOS.bak` file provided in the project folder.
+
+2.  **Connection String Configuration:**
+    *   Open the `SSPOS.GUI/App.config` file.
+    *   Modify the `SSPOSDBConnectionString` to match your SQL Server instance. For example:
+        ```xml
+        <connectionStrings>
+          <add name="SSPOSDBConnectionString" connectionString="Data Source=YOUR_SERVER_NAME;Initial Catalog=SSPOS;Integrated Security=True;" providerName="System.Data.SqlClient" />
+        </connectionStrings>
+        ```
+
+3.  **Build the Project:**
+    *   Open the `SSPOS.GUI/SSPOS.GUI.sln` file in Visual Studio.
+    *   Build the solution by going to `Build > Build Solution` or pressing `Ctrl+Shift+B`.
+
+4.  **Run the Application:**
+    *   Press `F5` or click on the "Start" button in Visual Studio to run the application.
+    *   The default login credentials are:
+        *   **Username:** SA
+        *   **Password:** SA
+
+## 6. Usage
+
+### Special Keys
+
+The application supports the following special keys for quick actions:
+
+*   **F1:** Save
+*   **F2:** Search
+*   **F3:** Refresh
+*   **F4:** Update
+*   **F5:** Delete
+*   **F6:** Populate/Print
+
+## 7. Dependencies
+
+The project relies on the following third-party libraries:
+
+*   **MaterialSkin.2:** For the user interface theme.
+*   **Newtonsoft.Json:** For working with JSON data.
+*   **QRCoder:** For generating QR codes.
+*   **Animator:** For UI animations.
+*   **VisualBasic.PowerPacks.Vs:** For shapes and other UI elements.
